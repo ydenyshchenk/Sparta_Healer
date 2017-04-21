@@ -10,6 +10,7 @@
         <arguments>
             <argument name="commands" xsi:type="array">
                 <item name="attribute_sets" xsi:type="object">Sparta\Healer\Console\Command\AttributeSets</item>
+                <item name="customer_attributes" xsi:type="object">Sparta\Healer\Console\Command\CustomerAttributes</item>
             </argument>
         </arguments>
     </type>
