@@ -275,7 +275,16 @@ class AttributeSets extends AbstractCommand
 
             foreach ($mapOldIdsToNewIdsMoveStep1 as $oldId => $newId) {
                 foreach ($attributeSetUpdateTables as $table) {
-                    $connection->update($table['t'], array($table['c'] => $newId), array($table['c'] . ' = ?' => $oldId));
+                    $column = $table['c'];
+                    $select->reset();
+                    $select->from(array('t' => $table['t']), $column)
+                        ->where($column . ' = ?', $newId);
+                    $isRowExist = $connection->query($select)->fetch();
+                    if ($isRowExist) {
+                        $connection->delete($table['t'], array($column . ' = ?' => $oldId));
+                    } else {
+                        $connection->update($table['t'], array($column => $newId), array($column . ' = ?' => $oldId));
+                    }
                 }
             }
         }
