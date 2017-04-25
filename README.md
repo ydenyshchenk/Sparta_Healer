@@ -38,3 +38,10 @@
 ```
 
 # Sparta_Healer supposed to heal your Magento 2 install
+```sh
+$ php bin/magento list heal
+...
+Available commands for the "heal" namespace:
+ heal:attribute_sets        Heal attribute set incorrect IDs
+ heal:customer_attributes   Heal customer attribute<>attribute_set links
+```
