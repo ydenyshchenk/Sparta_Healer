@@ -97,4 +97,47 @@ class AbstractCommand extends Command
     {
         return $this->getObjectManager()->get('\Magento\Store\Model\StoreManagerInterface');
     }
+
+    protected function drawImage()
+    {
+        $this->output->write('', true);
+        $this->output->write('', true);
+        $this->output->write('                                    `/syhhyyysyyyssoo+//:-.`', true);
+        $this->output->write('                                    `syhhhdddddmmNNNNNNNNNmmdys+/-.`', true);
+        $this->output->write('                                    .yyyhhhhhdmmmmmmmmmmmNNNNNNNNmdhyo/-.`', true);
+        $this->output->write('                                    :yyyhyyddmdddddddddhdmdddddyhdNNNNNNmhyo/-`', true);
+        $this->output->write('                                    :yyyyyhddddddddddddddddddddy+oshdhshdmNNmdy+-', true);
+        $this->output->write('                                    /yyyyyhhdddddhddddmmmmmmmmmmy+ooydyssyyyhhy-`', true);
+        $this->output->write('                                   `/yyyyyyyyyyhddhhdddddmmmmmmmmhooosyyysssss-', true);
+        $this->output->write('                                    +yyyyyyyyyyyyhdhhhhhhhhhdhdmmmhooooooosys.', true);
+        $this->output->write('                  ..--::::::::::::::oyhhhhhhhhhhhhdddddhhhhyyyyhdmdyoooooosyo', true);
+        $this->output->write('                 .shddmmmmmmmmmmmmmmNNNNNNNNNNNmmmmmmmmmmddhhyyyyddhhhyyhhhoo               ``', true);
+        $this->output->write('                 `.-/osyhddmmmmmmmNNNNNNMMMMMMMMMMMMMMMMMNNNNNNmmmmmddddddhs+              `', true);
+        $this->output->write('                       ``.-:/+osyyhmmmmdddmNNNMMMMMMMMMMMMMMMMMMMMMMMNNNNNmmdyso+/:--.`     ```', true);
+        $this->output->write('                                `/yddhysosydmNNMMMNMNMMMMMMMMMMMMMMMMMMMNNNNmmmmmmmmddhyso/:.````', true);
+        $this->output->write(' ```   ````                     `hhhhh++/+/ohmNMMMNNMNMNNNNMMMMMMMMMMMMNNmmmmmmmmmmmmmmmmmmddyo````', true);
+        $this->output->write('``````````````````           `.:sdhhhy++++++ymNMMNNNMNNNNNMMMMMMMMMMMMMNm/:://+++ooosssssssso+:`````', true);
+        $this->output->write('```````````````````````` `.-/sdmmmdhhho++++odmNNNNNNNNNNNNMMMMMMMMMMMMMNh                     ``````', true);
+        $this->output->write('``````````````````````.:oyhdmmNNNNNmhhhysyydmmmmmmmNNNNNNNMMMMMMMMMMMMMNo                     ``````', true);
+        $this->output->write('```````````````````.:shdmmmmmmmNNNNNmdhhhhhddddmmmmNNNNNNNNNMMMMMMMMMMMNs                      `````', true);
+        $this->output->write('`````````````````.+ydddddmmmmmmmNNNNNmmdhhhhhddmmmmNNNNNNNNNNNNMMNNNNNNms                      `````', true);
+        $this->output->write('````````````````+yddddddddddmmmmmmmmmmmmdddddddmmNmNNNNNNmmNNNNNNNNNNmmmy                       ````', true);
+        $this->output->write('``````````````.shhdddddddddddmmmmmmmmmmmmdddmmmmNNNNNNNNNmmNNNNNNNmmmmdms                        ```', true);
+        $this->output->write('`````````````.syhhhhddddhdddddmmmmmmmmmmmmmmmmmNNNNNNMNNmmmNNNNmmmmmmdmm/                          `', true);
+        $this->output->write('`````````````osyhhhhdddddmmmddmmmmmmmmmmmmmmmNNNNNNMMMNmmmmmmmmmmmmmmmmd`', true);
+        $this->output->write('````````````:syhdddddhyso++//::/oyhddddmmNNNNNNNNMMMMNmmmmmmmmmmNNNNmmm/', true);
+        $this->output->write('````````````shyhhys+:.`...........-/shddmmNNNNNMMMMMNmmmmNNNNMMMMMMMNNd.', true);
+        $this->output->write('````````````:-.`````````..........```.:ydmNNNMMNNMMNmmmNNNNMMNNMMMMMMMNh`', true);
+        $this->output->write('`````````````````````````.........``````-:dNNNNNMMNmmmNNNNNNNmmmmmmmmNNN+', true);
+        $this->output->write('``````````````````````````........````````ommmmNmmmmmNNNNNNmmmmmmmmmmmmmdo-`', true);
+        $this->output->write('````````````````````````````......````````.hmmmmmmmmNNNNmmmmmmmNNNNNNNNmmmmy::.', true);
+        $this->output->write('````````..````````````````````..```````````+dmmmmmNNNNNNNNNNNNNNNNmmmmmdddddddy-`', true);
+        $this->output->write('```````...`````````````````````````````````:dmmNNNNNNNNMNNNNmmmmmmmmmmmdddddddhhyo:`', true);
+        $this->output->write('````````..``````````````````````````````./odmNmmNNNNNmmmmmmmmmmmmmmddddddddhhhhhhhhhs:`', true);
+        $this->output->write('``````...```````````````````````````-+shhhhdddmmmmmmmmmmmmmmmmmmmmmmmmdddddddhhhhhhhdNh/`` `', true);
+        $this->output->write('``````..`````````````````````````-ohdddddhhdddmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddhhhhhhhdNNh+-````', true);
+        $this->output->write('`````.`.```````````````````````.sddddddddddddddmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddddhhhhhhdmNmdy/.```', true);
+        $this->output->write('', true);
+        $this->output->write('', true);
+    }
 }
