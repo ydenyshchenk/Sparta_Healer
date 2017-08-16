@@ -11,7 +11,7 @@ class CustomerAttributes extends AbstractCommand
      */
     protected function configure()
     {
-        $this->setName('heal:customer_attributes');
+        $this->setName('sparta:heal:customer_attributes');
         $this->setDescription('Heal customer attribute<>attribute_set links');
         parent::configure();
     }

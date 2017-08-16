@@ -38,10 +38,19 @@
 ```
 
 # Sparta_Healer supposed to heal your Magento 2 install
+
+## Installation
+```
+git clone git@github.com:ydenyshchenk/Sparta_UrlRewriteRebuilder.git app/code/Sparta/UrlRewriteRebuilder
+bin/magento module:enable Sparta_UrlRewriteRebuilder
+bin/magento setup:upgrade
+chmod -R 777 var
+```
+
+## Usage
 ```sh
 $ php bin/magento list heal
 ...
-Available commands for the "heal" namespace:
- heal:attribute_sets        Heal attribute set incorrect IDs
- heal:customer_attributes   Heal customer attribute<>attribute_set links
+ sparta:heal:attribute_sets        Heal attribute set incorrect IDs
+ sparta:heal:customer_attributes   Heal customer attribute<>attribute_set links
 ```

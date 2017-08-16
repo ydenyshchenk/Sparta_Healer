@@ -11,7 +11,7 @@ class AttributeSets extends AbstractCommand
      */
     protected function configure()
     {
-        $this->setName('heal:attribute_sets');
+        $this->setName('sparta:heal:attribute_sets');
         $this->setDescription('Heal attribute set incorrect IDs');
         parent::configure();
     }
