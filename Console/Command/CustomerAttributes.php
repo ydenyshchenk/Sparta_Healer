@@ -55,6 +55,7 @@ class CustomerAttributes extends AbstractCommand
             exit();
         }
 
+        $repairedAttributes = [];
         $eeaRepairRows = array();
         foreach ($missedCustomerAttributes as $a) {
             $data = $eeaTemplate;
@@ -62,13 +63,15 @@ class CustomerAttributes extends AbstractCommand
             $data['attribute_id'] = $a['attribute_id'];
             $data['sort_order'] = $a['sort_order'];
             $eeaRepairRows[$attributeCode] = $data;
+            $repairedAttributes[] = $attributeCode;
         }
 
         $connection->insertMultiple($eavEntityAttributeTable, $eeaRepairRows);
 
         $timeEnd = microtime(true);
         $timeDiff = $timeEnd - $timeStart;
-        $this->output->write('Repaired customer attribute<>attribute_set links in ' . $this->formatTime($timeDiff), true);
+        $this->output->write('Repaired customer attribute<>attribute_set for ' . count($repairedAttributes)
+            . ' attributes (' . implode(', ', $repairedAttributes) . ') links in ' . $this->formatTime($timeDiff), true);
     }
 
     /**
